@@ -44,7 +44,20 @@ public class Driver {
 		for(int i = 0; i < AMOUNT; i++) {
 			mylist.remove(0);
 		}
-		
+//		System.out.print("reglist: ");
+//		reglist.toString();
+//		System.out.print("mylist: ");
+//		mylist.toString();
+//		mylist.add(666);
+////		reglist.add(666);
+//		mylist.set(7, 999);
+//		mylist.remove(0);
+////		mylist.add(7);
+//		System.out.print("reglist: ");
+//		reglist.toString();
+//		System.out.print("mylist: ");
+//		mylist.toString();
+////		System.out.println(mylist.get(6));
 		t2 = System.nanoTime();
 		
 		long myTime = t2 - t1;
@@ -53,7 +66,7 @@ public class Driver {
 		System.out.println("It took MyArrayList " + myTime + " ns to complete.");
 		
 		double ratio = (double) (myTime - regTime) / (double) regTime;
-		
+		//System.out.print("The original ArrayList is -4936% faster");
 		System.out.printf("The original ArrayList is %.2f%% faster.%n", ratio * 100);
 	}
 }
